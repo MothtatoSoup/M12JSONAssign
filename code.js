@@ -1,9 +1,9 @@
 
-const frstNm = document.getElementById("fn").value;
-const lNm = document.getElementById("ln").value;
-const crse = document.getElementById("crs").value;
-const secnm = document.getElementById("snm").value;
-const roleyPoley = document.getElementById("role").value;
+const frstNm = document.getElementById("fn")
+const lNm = document.getElementById("ln")
+const crse = document.getElementById("crs")
+const secnm = document.getElementById("snm")
+const roleyPoley = document.getElementById("role")
 
 const person = {
     fName: null,
@@ -11,21 +11,22 @@ const person = {
     Course: null,
     SecNum: null,
     Role: null,
-}
+};
 
-document.getElementById("subbutt").addEventListener("click",makePers())
+document.getElementById("subbutt").addEventListener("click",makePers)
 function makePers(){
-    person.fName = frstNm;
-    person.lName = lNm;
-    person.Course = crse;
-    person.SecNum = secnm;
-    person.Role = roleyPoley;
+    person.fName = frstNm.value;
+    person.lName = lNm.value;
+    person.Course = crse.value;
+    person.SecNum = secnm.value;
+    person.Role = roleyPoley.value;
 
-    consoleIt()
-}
-function consoleIt(){
     console.log("---Object---")
     console.log(person)
     console.log("---String---")
     const jsonPerson = JSON.stringify(person)
-}
+    console.log(jsonPerson)
+
+    prompt()
+    event.preventDefault
+};
